@@ -2,7 +2,7 @@
 
 namespace MyHelper;
 
-class Date
+class MyDateAndTime
 {
     public static function now()
     {
