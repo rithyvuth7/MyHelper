@@ -1,0 +1,21 @@
+{
+    "name": "rithyvuth7/my-helper",
+    "description": "A collection of helper functions for PHP developers",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tha Rithyvuth",
+            "email": "tharithyvuth7@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.0|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "MyHelper\\": "src/"
+        }
+    }
+
+}
