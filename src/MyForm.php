@@ -5,9 +5,9 @@ namespace MyHelper;
 class MyForm
 {
     /**
-     * @param string $optValue
-     * @param string $selectedValue
-     * @return string
+     * @param string $optValue the value of the option
+     * @param string $selectedValue the value of the selected option
+     * @return string return 'selected' if the option value is equal to the selected value
      */
     public static function getSelected(string $optValue, string $selectedValue):string
     {
@@ -17,9 +17,9 @@ class MyForm
         return '';
     }
     /**
-     * @param string $optValue
-     * @param array $multiSelectedValues
-     * @return string
+     * @param string $optValue the value of the option
+     * @param array $multiSelectedValues the values of the selected options
+     * @return string return 'selected' if the option value is equal to one of the selected values
      */
     public static function getMultiSelected(string $optValue, array $multiSelectedValues):string
     {
