@@ -60,4 +60,20 @@ class MyDateAndTime
         return $result;
     }
 
+    /**
+     * Conut the date between two dates (Example: 2021-01-01 to 2021-01-04  // 4 days)
+     * @param string $start_date the start date in format Y-m-d (Example: 2021-01-01)
+     * @param string $end_date the end date in format Y-m-d (Example: 2021-01-04)
+     * @return int return the number of days between two dates (Example: 4)
+     */
+
+    public static function countDate(string $start_date, string $end_date):int
+    {
+        $start_date = strtotime($start_date);
+        $end_date = strtotime($end_date);
+        $diff = $end_date - $start_date;
+        return ($diff / (60 * 60 * 24)) + 1;
+    }
+    
+
 }
